@@ -18,6 +18,6 @@ To retrieve the files, run `git clone` to download the application. Alternativel
 To install the application, run `composer install` from the directory with the application. You may run into issues with PHP compatibility. I was able to work around this on my webhost (reclaimhosting.com) by using the following command. This only worked because I could set the "domain PHP" to 8.1 in the MultiPHP Manager in cPanel.
 `composer install --ignore-platform-reqs`
 
-To create the database, go to `this wiki page` and run the SQL inside a MySQL database that you create on your webhost.
+To create the database, go to `this wiki page` and run the SQL inside a MySQL database that you create on your webhost. Run the migrations (`php artisan migrate`).
 
-To connect the database to the application, create a .env file in the application directory which has `these settings`.
+To connect the database to the application, create a .env file in the application directory which has [these settings](./.env.example).
